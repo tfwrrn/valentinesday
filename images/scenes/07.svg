@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <linearGradient id="bg07" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF0F5"/>
+      <stop offset="50%" stop-color="#FFE4EC"/>
+      <stop offset="100%" stop-color="#FFF5E6"/>
+    </linearGradient>
+    <filter id="glow07">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="300" fill="url(#bg07)"/>
+  <!-- Confetti pieces scattered everywhere -->
+  <!-- Left side confetti -->
+  <rect x="80" y="40" width="8" height="4" rx="1" fill="#FF6B8A" transform="rotate(30,84,42)" opacity="0.7">
+    <animateTransform attributeName="transform" type="translate" values="0,0;5,15;0,0" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="120" y="60" width="6" height="3" rx="1" fill="#FFD700" transform="rotate(-45,123,61)" opacity="0.8">
+    <animateTransform attributeName="transform" type="translate" values="0,0;-3,12;0,0" dur="1.8s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="160" y="30" width="7" height="4" rx="1" fill="#87CEEB" transform="rotate(60,163,32)" opacity="0.7">
+    <animateTransform attributeName="transform" type="translate" values="0,0;4,18;0,0" dur="2.2s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="100" cy="80" r="3" fill="#FF8FAB" opacity="0.6">
+    <animateTransform attributeName="transform" type="translate" values="0,0;2,10;0,0" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <rect x="140" y="90" width="5" height="3" rx="1" fill="#FFA500" transform="rotate(-20,142,91)" opacity="0.7">
+    <animateTransform attributeName="transform" type="translate" values="0,0;-4,14;0,0" dur="2.4s" repeatCount="indefinite"/>
+  </rect>
+  <!-- Right side confetti -->
+  <rect x="420" y="35" width="8" height="4" rx="1" fill="#FF6B8A" transform="rotate(-30,424,37)" opacity="0.7">
+    <animateTransform attributeName="transform" type="translate" values="0,0;-5,15;0,0" dur="2.1s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="460" y="55" width="6" height="3" rx="1" fill="#90EE90" transform="rotate(45,463,56)" opacity="0.8">
+    <animateTransform attributeName="transform" type="translate" values="0,0;3,12;0,0" dur="1.7s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="500" y="25" width="7" height="4" rx="1" fill="#DDA0DD" transform="rotate(-60,503,27)" opacity="0.7">
+    <animateTransform attributeName="transform" type="translate" values="0,0;-4,18;0,0" dur="2.3s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="480" cy="75" r="3" fill="#FFD700" opacity="0.6">
+    <animateTransform attributeName="transform" type="translate" values="0,0;-2,10;0,0" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+  <rect x="440" y="90" width="5" height="3" rx="1" fill="#87CEEB" transform="rotate(20,442,91)" opacity="0.7">
+    <animateTransform attributeName="transform" type="translate" values="0,0;4,14;0,0" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+  <!-- More confetti around the phone -->
+  <rect x="240" y="50" width="6" height="3" rx="1" fill="#FF6B8A" transform="rotate(15,243,51)" opacity="0.6"/>
+  <rect x="340" y="45" width="7" height="3" rx="1" fill="#FFD700" transform="rotate(-25,343,46)" opacity="0.7"/>
+  <circle cx="220" cy="100" r="2.5" fill="#90EE90" opacity="0.5"/>
+  <circle cx="380" cy="95" r="2.5" fill="#DDA0DD" opacity="0.5"/>
+  <!-- Phone body -->
+  <g transform="translate(250,70)">
+    <rect x="0" y="0" width="100" height="180" rx="15" fill="#2C2C2C" stroke="#444" stroke-width="2"/>
+    <!-- Screen -->
+    <rect x="8" y="15" width="84" height="140" rx="5" fill="#4A90D9"/>
+    <!-- Screen gradient overlay -->
+    <rect x="8" y="15" width="84" height="140" rx="5" fill="#FF6B8A" opacity="0.3"/>
+    <!-- Heart on screen -->
+    <path d="M50 60 Q50 45 62 45 Q74 45 74 60 Q74 78 50 95 Q26 78 26 60 Q26 45 38 45 Q50 45 50 60Z" fill="#FF4466" opacity="0.8"/>
+    <path d="M50 65 Q50 55 58 55 Q66 55 66 65 Q66 76 50 87 Q34 76 34 65 Q34 55 42 55 Q50 55 50 65Z" fill="#FF6B8A" opacity="0.6"/>
+    <!-- Name text suggestion -->
+    <rect x="20" y="105" width="60" height="6" rx="3" fill="#FFF" opacity="0.5"/>
+    <rect x="30" y="118" width="40" height="4" rx="2" fill="#FFF" opacity="0.3"/>
+    <!-- Phone speaker -->
+    <rect x="38" y="6" width="24" height="3" rx="1.5" fill="#555"/>
+    <!-- Home button hint -->
+    <circle cx="50" cy="168" r="6" fill="none" stroke="#555" stroke-width="1"/>
+  </g>
+  <!-- RING! text - left -->
+  <g transform="translate(140,90)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#FF4466" opacity="0.8" transform="rotate(-15)">
+      RING!
+    </text>
+  </g>
+  <!-- RING! text - right -->
+  <g transform="translate(370,80)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FF6B8A" opacity="0.7" transform="rotate(10)">
+      RING!
+    </text>
+  </g>
+  <!-- Sound waves from phone -->
+  <path d="M240 130 Q225 130 220 115" fill="none" stroke="#FF6B8A" stroke-width="2" opacity="0.5"/>
+  <path d="M235 130 Q215 130 208 110" fill="none" stroke="#FF6B8A" stroke-width="2" opacity="0.35"/>
+  <path d="M230 130 Q205 130 196 105" fill="none" stroke="#FF6B8A" stroke-width="2" opacity="0.2"/>
+  <path d="M360 130 Q375 130 380 115" fill="none" stroke="#FF6B8A" stroke-width="2" opacity="0.5"/>
+  <path d="M365 130 Q385 130 392 110" fill="none" stroke="#FF6B8A" stroke-width="2" opacity="0.35"/>
+  <path d="M370 130 Q395 130 404 105" fill="none" stroke="#FF6B8A" stroke-width="2" opacity="0.2"/>
+  <!-- Vibration lines -->
+  <line x1="245" y1="75" x2="238" y2="68" stroke="#FFD700" stroke-width="2" opacity="0.5" stroke-linecap="round"/>
+  <line x1="355" y1="75" x2="362" y2="68" stroke="#FFD700" stroke-width="2" opacity="0.5" stroke-linecap="round"/>
+  <line x1="245" y1="245" x2="238" y2="252" stroke="#FFD700" stroke-width="2" opacity="0.5" stroke-linecap="round"/>
+  <line x1="355" y1="245" x2="362" y2="252" stroke="#FFD700" stroke-width="2" opacity="0.5" stroke-linecap="round"/>
+  <!-- Sparkle bursts -->
+  <path d="M200 50 L202 56 L208 56 L203 60 L205 66 L200 62 L195 66 L197 60 L192 56 L198 56Z" fill="#FFD700" opacity="0.7"/>
+  <path d="M400 45 L402 51 L408 51 L403 55 L405 61 L400 57 L395 61 L397 55 L392 51 L398 51Z" fill="#FFD700" opacity="0.7"/>
+  <path d="M180 180 L182 186 L188 186 L183 190 L185 196 L180 192 L175 196 L177 190 L172 186 L178 186Z" fill="#FFD700" opacity="0.5"/>
+  <path d="M420 175 L422 181 L428 181 L423 185 L425 191 L420 187 L415 191 L417 185 L412 181 L418 181Z" fill="#FFD700" opacity="0.5"/>
+  <!-- Bottom confetti -->
+  <rect x="150" y="260" width="6" height="3" rx="1" fill="#FFA500" transform="rotate(40,153,261)" opacity="0.5"/>
+  <rect x="430" y="265" width="7" height="3" rx="1" fill="#87CEEB" transform="rotate(-35,433,266)" opacity="0.5"/>
+  <circle cx="200" cy="270" r="2" fill="#FF6B8A" opacity="0.4"/>
+  <circle cx="400" cy="275" r="2" fill="#90EE90" opacity="0.4"/>
+</svg>

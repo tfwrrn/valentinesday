@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <linearGradient id="nightsky09" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A0A2E"/>
+      <stop offset="40%" stop-color="#1A1045"/>
+      <stop offset="100%" stop-color="#2D1B4E"/>
+    </linearGradient>
+    <linearGradient id="startrail09" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#FFF8DC" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#FFD700" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="starglow09">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bigglow09">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+  <!-- Night sky -->
+  <rect width="600" height="300" fill="url(#nightsky09)"/>
+  <!-- Milky way hint -->
+  <ellipse cx="300" cy="150" rx="350" ry="40" fill="#4A3A6E" opacity="0.15" transform="rotate(-10,300,150)"/>
+  <ellipse cx="300" cy="150" rx="300" ry="25" fill="#5A4A7E" opacity="0.1" transform="rotate(-10,300,150)"/>
+  <!-- Background stars - tiny -->
+  <circle cx="30" cy="20" r="1" fill="#FFF" opacity="0.5"/>
+  <circle cx="80" cy="50" r="0.8" fill="#FFF" opacity="0.4"/>
+  <circle cx="45" cy="90" r="1" fill="#FFF" opacity="0.3"/>
+  <circle cx="110" cy="30" r="0.8" fill="#FFF" opacity="0.5"/>
+  <circle cx="150" cy="70" r="1" fill="#FFF" opacity="0.4"/>
+  <circle cx="180" cy="20" r="0.8" fill="#FFF" opacity="0.3"/>
+  <circle cx="220" cy="50" r="1" fill="#FFF" opacity="0.5"/>
+  <circle cx="260" cy="30" r="0.8" fill="#FFF" opacity="0.4"/>
+  <circle cx="320" cy="15" r="1" fill="#FFF" opacity="0.3"/>
+  <circle cx="370" cy="45" r="0.8" fill="#FFF" opacity="0.5"/>
+  <circle cx="410" cy="25" r="1" fill="#FFF" opacity="0.4"/>
+  <circle cx="460" cy="60" r="0.8" fill="#FFF" opacity="0.3"/>
+  <circle cx="500" cy="20" r="1" fill="#FFF" opacity="0.5"/>
+  <circle cx="540" cy="50" r="0.8" fill="#FFF" opacity="0.4"/>
+  <circle cx="570" cy="30" r="1" fill="#FFF" opacity="0.3"/>
+  <circle cx="60" cy="140" r="0.8" fill="#FFF" opacity="0.3"/>
+  <circle cx="130" cy="170" r="1" fill="#FFF" opacity="0.4"/>
+  <circle cx="190" cy="130" r="0.8" fill="#FFF" opacity="0.3"/>
+  <circle cx="350" cy="160" r="1" fill="#FFF" opacity="0.3"/>
+  <circle cx="420" cy="140" r="0.8" fill="#FFF" opacity="0.4"/>
+  <circle cx="490" cy="170" r="1" fill="#FFF" opacity="0.3"/>
+  <circle cx="555" cy="130" r="0.8" fill="#FFF" opacity="0.3"/>
+  <circle cx="40" cy="200" r="0.8" fill="#FFF" opacity="0.25"/>
+  <circle cx="560" cy="200" r="0.8" fill="#FFF" opacity="0.25"/>
+  <circle cx="100" cy="230" r="0.8" fill="#FFF" opacity="0.2"/>
+  <circle cx="500" cy="230" r="0.8" fill="#FFF" opacity="0.2"/>
+  <!-- Brighter stars with twinkle -->
+  <circle cx="90" cy="110" r="2" fill="#FFF" opacity="0.7" filter="url(#starglow09)">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="250" cy="90" r="2" fill="#FFF" opacity="0.6" filter="url(#starglow09)">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="440" cy="100" r="2" fill="#FFF" opacity="0.7" filter="url(#starglow09)">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="560" cy="80" r="1.5" fill="#FFF" opacity="0.6" filter="url(#starglow09)">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="180" cy="180" r="1.5" fill="#FFF" opacity="0.5" filter="url(#starglow09)">
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="2.7s" repeatCount="indefinite"/>
+  </circle>
+  <!-- SHOOTING STAR -->
+  <!-- Star trail -->
+  <line x1="100" y1="80" x2="420" y2="170" stroke="url(#startrail09)" stroke-width="3" opacity="0.7" stroke-linecap="round"/>
+  <!-- Trail particles -->
+  <circle cx="150" cy="93" r="1.5" fill="#FFF8DC" opacity="0.4"/>
+  <circle cx="200" cy="106" r="1" fill="#FFF8DC" opacity="0.35"/>
+  <circle cx="250" cy="120" r="1.5" fill="#FFF8DC" opacity="0.3"/>
+  <circle cx="300" cy="133" r="1" fill="#FFD700" opacity="0.35"/>
+  <circle cx="350" cy="147" r="1.5" fill="#FFD700" opacity="0.4"/>
+  <circle cx="175" cy="100" r="0.8" fill="#FFF" opacity="0.3"/>
+  <circle cx="225" cy="115" r="0.8" fill="#FFF" opacity="0.25"/>
+  <circle cx="275" cy="128" r="0.8" fill="#FFF" opacity="0.3"/>
+  <circle cx="325" cy="140" r="0.8" fill="#FFD700" opacity="0.35"/>
+  <circle cx="375" cy="155" r="0.8" fill="#FFD700" opacity="0.3"/>
+  <!-- Star head (bright point) -->
+  <circle cx="420" cy="170" r="6" fill="#FFF" opacity="0.8" filter="url(#bigglow09)"/>
+  <circle cx="420" cy="170" r="4" fill="#FFF8DC" opacity="0.9" filter="url(#starglow09)"/>
+  <circle cx="420" cy="170" r="2" fill="#FFF"/>
+  <!-- Star sparkle cross -->
+  <line x1="420" y1="158" x2="420" y2="182" stroke="#FFF" stroke-width="1" opacity="0.6"/>
+  <line x1="408" y1="170" x2="432" y2="170" stroke="#FFF" stroke-width="1" opacity="0.6"/>
+  <line x1="412" y1="162" x2="428" y2="178" stroke="#FFF" stroke-width="0.5" opacity="0.4"/>
+  <line x1="428" y1="162" x2="412" y2="178" stroke="#FFF" stroke-width="0.5" opacity="0.4"/>
+  <!-- Gentle hills/landscape at bottom -->
+  <path d="M0 270 Q100 240 200 255 Q300 230 400 250 Q500 240 600 260 L600 300 L0 300Z" fill="#1A0F30" opacity="0.6"/>
+  <path d="M0 280 Q150 255 300 265 Q450 250 600 270 L600 300 L0 300Z" fill="#150D28" opacity="0.7"/>
+  <!-- Tiny tree silhouettes -->
+  <path d="M120 262 L125 248 L130 262Z" fill="#1A0F30" opacity="0.5"/>
+  <path d="M470 255 L475 240 L480 255Z" fill="#1A0F30" opacity="0.5"/>
+  <path d="M350 258 L354 245 L358 258Z" fill="#1A0F30" opacity="0.4"/>
+  <!-- Small hearts near the star -->
+  <path d="M440 155 Q440 151 443 151 Q446 151 446 155 Q446 159 440 162 Q434 159 434 155 Q434 151 437 151 Q440 151 440 155Z" fill="#FF6B8A" opacity="0.35">
+    <animateTransform attributeName="transform" type="translate" values="0,0;3,-5;6,-10" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.35;0.15;0" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <path d="M400 180 Q400 177 402 177 Q404 177 404 180 Q404 183 400 185 Q396 183 396 180 Q396 177 398 177 Q400 177 400 180Z" fill="#FF8FAB" opacity="0.3">
+    <animateTransform attributeName="transform" type="translate" values="0,0;-2,-4;-4,-8" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.1;0" dur="3.5s" repeatCount="indefinite"/>
+  </path>
+</svg>

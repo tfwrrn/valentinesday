@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <linearGradient id="sky06" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2D1B4E"/>
+      <stop offset="40%" stop-color="#6B3A7D"/>
+      <stop offset="70%" stop-color="#C85A5A"/>
+      <stop offset="100%" stop-color="#FF8C50"/>
+    </linearGradient>
+    <filter id="twinkle06">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="cityglow06">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <!-- Sky gradient -->
+  <rect width="600" height="300" fill="url(#sky06)"/>
+  <!-- Crescent moon -->
+  <circle cx="480" cy="50" r="25" fill="#FFF8DC" filter="url(#twinkle06)"/>
+  <circle cx="490" cy="43" r="22" fill="#2D1B4E"/>
+  <!-- Stars -->
+  <circle cx="50" cy="30" r="2" fill="#FFF" opacity="0.8" filter="url(#twinkle06)">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="120" cy="55" r="1.5" fill="#FFF" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="25" r="1.5" fill="#FFF" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="40" r="2" fill="#FFF" opacity="0.6" filter="url(#twinkle06)">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="380" cy="20" r="1.5" fill="#FFF" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.4;0.7" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="550" cy="35" r="1.5" fill="#FFF" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="420" cy="60" r="1" fill="#FFF" opacity="0.6"/>
+  <circle cx="250" cy="60" r="1" fill="#FFF" opacity="0.5"/>
+  <circle cx="160" cy="15" r="1" fill="#FFF" opacity="0.4"/>
+  <circle cx="530" cy="65" r="1" fill="#FFF" opacity="0.4"/>
+  <!-- Distant buildings silhouettes - back row -->
+  <rect x="20" y="140" width="40" height="160" rx="2" fill="#1A0F25"/>
+  <rect x="55" y="120" width="35" height="180" rx="2" fill="#1A0F25"/>
+  <rect x="85" y="150" width="50" height="150" rx="2" fill="#1A0F25"/>
+  <rect x="130" y="110" width="30" height="190" rx="2" fill="#1A0F25"/>
+  <rect x="155" y="135" width="45" height="165" rx="2" fill="#1A0F25"/>
+  <rect x="195" y="100" width="55" height="200" rx="2" fill="#1A0F25"/>
+  <rect x="245" y="130" width="35" height="170" rx="2" fill="#1A0F25"/>
+  <rect x="275" y="115" width="40" height="185" rx="2" fill="#1A0F25"/>
+  <rect x="310" y="145" width="50" height="155" rx="2" fill="#1A0F25"/>
+  <rect x="355" y="105" width="35" height="195" rx="2" fill="#1A0F25"/>
+  <rect x="385" y="125" width="45" height="175" rx="2" fill="#1A0F25"/>
+  <rect x="425" y="140" width="30" height="160" rx="2" fill="#1A0F25"/>
+  <rect x="450" y="110" width="50" height="190" rx="2" fill="#1A0F25"/>
+  <rect x="495" y="130" width="40" height="170" rx="2" fill="#1A0F25"/>
+  <rect x="530" y="150" width="35" height="150" rx="2" fill="#1A0F25"/>
+  <rect x="560" y="125" width="40" height="175" rx="2" fill="#1A0F25"/>
+  <!-- Building windows - twinkling lights -->
+  <!-- Building 1 -->
+  <rect x="28" y="155" width="4" height="5" rx="1" fill="#FFD700" opacity="0.7"/>
+  <rect x="38" y="165" width="4" height="5" rx="1" fill="#FFA500" opacity="0.6"/>
+  <rect x="28" y="180" width="4" height="5" rx="1" fill="#FFD700" opacity="0.5"/>
+  <!-- Building 2 -->
+  <rect x="62" y="130" width="4" height="5" rx="1" fill="#FFD700" opacity="0.7"/>
+  <rect x="72" y="145" width="4" height="5" rx="1" fill="#FFA500" opacity="0.6"/>
+  <rect x="62" y="160" width="4" height="5" rx="1" fill="#FFD700" opacity="0.5"/>
+  <rect x="72" y="175" width="4" height="5" rx="1" fill="#FFA500" opacity="0.4"/>
+  <!-- Building 3 -->
+  <rect x="95" y="160" width="4" height="5" rx="1" fill="#FFD700" opacity="0.6"/>
+  <rect x="110" y="170" width="4" height="5" rx="1" fill="#FFA500" opacity="0.7"/>
+  <rect x="95" y="185" width="4" height="5" rx="1" fill="#FFD700" opacity="0.5"/>
+  <!-- Building 4 tall -->
+  <rect x="136" y="120" width="4" height="5" rx="1" fill="#FFD700" opacity="0.8"/>
+  <rect x="136" y="140" width="4" height="5" rx="1" fill="#FFA500" opacity="0.6"/>
+  <rect x="136" y="160" width="4" height="5" rx="1" fill="#FFD700" opacity="0.5"/>
+  <!-- Building 5 -->
+  <rect x="165" y="145" width="4" height="5" rx="1" fill="#FFD700" opacity="0.7"/>
+  <rect x="178" y="155" width="4" height="5" rx="1" fill="#FFA500" opacity="0.6"/>
+  <!-- Building 6 tall -->
+  <rect x="205" y="110" width="5" height="6" rx="1" fill="#FFD700" opacity="0.8"/>
+  <rect x="220" y="120" width="5" height="6" rx="1" fill="#FFA500" opacity="0.7"/>
+  <rect x="205" y="135" width="5" height="6" rx="1" fill="#FFD700" opacity="0.6"/>
+  <rect x="220" y="145" width="5" height="6" rx="1" fill="#FFA500" opacity="0.5"/>
+  <rect x="235" y="155" width="5" height="6" rx="1" fill="#FFD700" opacity="0.6"/>
+  <!-- More building windows -->
+  <rect x="282" y="125" width="4" height="5" rx="1" fill="#FFD700" opacity="0.7"/>
+  <rect x="295" y="135" width="4" height="5" rx="1" fill="#FFA500" opacity="0.6"/>
+  <rect x="282" y="150" width="4" height="5" rx="1" fill="#FFD700" opacity="0.5"/>
+  <rect x="320" y="155" width="4" height="5" rx="1" fill="#FFD700" opacity="0.7"/>
+  <rect x="340" y="165" width="4" height="5" rx="1" fill="#FFA500" opacity="0.6"/>
+  <rect x="362" y="115" width="4" height="5" rx="1" fill="#FFD700" opacity="0.8"/>
+  <rect x="375" y="130" width="4" height="5" rx="1" fill="#FFA500" opacity="0.7"/>
+  <rect x="362" y="145" width="4" height="5" rx="1" fill="#FFD700" opacity="0.6"/>
+  <rect x="395" y="135" width="4" height="5" rx="1" fill="#FFD700" opacity="0.7"/>
+  <rect x="410" y="150" width="4" height="5" rx="1" fill="#FFA500" opacity="0.6"/>
+  <rect x="460" y="120" width="5" height="6" rx="1" fill="#FFD700" opacity="0.8"/>
+  <rect x="478" y="130" width="5" height="6" rx="1" fill="#FFA500" opacity="0.7"/>
+  <rect x="460" y="145" width="5" height="6" rx="1" fill="#FFD700" opacity="0.6"/>
+  <rect x="505" y="140" width="4" height="5" rx="1" fill="#FFD700" opacity="0.7"/>
+  <rect x="518" y="155" width="4" height="5" rx="1" fill="#FFA500" opacity="0.6"/>
+  <rect x="540" y="160" width="4" height="5" rx="1" fill="#FFD700" opacity="0.6"/>
+  <rect x="570" y="135" width="4" height="5" rx="1" fill="#FFD700" opacity="0.7"/>
+  <rect x="582" y="150" width="4" height="5" rx="1" fill="#FFA500" opacity="0.6"/>
+  <!-- City glow -->
+  <rect x="0" y="250" width="600" height="50" fill="#1A0F25"/>
+  <rect x="0" y="245" width="600" height="15" fill="#FF8C50" opacity="0.1" filter="url(#cityglow06)"/>
+  <!-- Small hearts in the sky -->
+  <path d="M350 80 Q350 76 354 76 Q358 76 358 80 Q358 85 350 89 Q342 85 342 80 Q342 76 346 76 Q350 76 350 80Z" fill="#FF6B8A" opacity="0.35">
+    <animateTransform attributeName="transform" type="translate" values="0,0;2,-3;0,0" dur="4s" repeatCount="indefinite"/>
+  </path>
+  <path d="M150 75 Q150 72 153 72 Q156 72 156 75 Q156 79 150 82 Q144 79 144 75 Q144 72 147 72 Q150 72 150 75Z" fill="#FF8FAB" opacity="0.3">
+    <animateTransform attributeName="transform" type="translate" values="0,0;-1,-4;0,0" dur="3.5s" repeatCount="indefinite"/>
+  </path>
+</svg>

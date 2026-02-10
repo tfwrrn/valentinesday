@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <linearGradient id="bg10" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFF0F5"/>
+      <stop offset="100%" stop-color="#FFE4EC"/>
+    </linearGradient>
+    <linearGradient id="ribbon10" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF4466"/>
+      <stop offset="50%" stop-color="#FF6B8A"/>
+      <stop offset="100%" stop-color="#FF4466"/>
+    </linearGradient>
+    <linearGradient id="box10" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFB6C1"/>
+      <stop offset="100%" stop-color="#FF8FAB"/>
+    </linearGradient>
+    <linearGradient id="boxside10" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF8FAB"/>
+      <stop offset="100%" stop-color="#E8708A"/>
+    </linearGradient>
+    <filter id="sparkle10">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="300" fill="url(#bg10)"/>
+  <!-- Soft radial glow behind gift -->
+  <circle cx="300" cy="160" r="120" fill="#FFD700" opacity="0.06"/>
+  <circle cx="300" cy="160" r="80" fill="#FFD700" opacity="0.08"/>
+  <!-- Left hand -->
+  <g transform="translate(150,130)">
+    <!-- Palm -->
+    <ellipse cx="0" cy="20" rx="35" ry="25" fill="#FFDAB9" transform="rotate(15)"/>
+    <!-- Thumb -->
+    <ellipse cx="-25" cy="5" rx="10" ry="15" fill="#FFDAB9" transform="rotate(30,-25,5)"/>
+    <!-- Fingers -->
+    <ellipse cx="-12" cy="-15" rx="7" ry="18" fill="#FFDAB9" transform="rotate(10,-12,-15)"/>
+    <ellipse cx="2" cy="-18" rx="7" ry="19" fill="#FFDAB9" transform="rotate(2,2,-18)"/>
+    <ellipse cx="16" cy="-16" rx="7" ry="18" fill="#FFDAB9" transform="rotate(-5,16,-16)"/>
+    <ellipse cx="28" cy="-10" rx="6" ry="16" fill="#FFDAB9" transform="rotate(-15,28,-10)"/>
+    <!-- Finger details -->
+    <line x1="-12" y1="-6" x2="-12" y2="-4" stroke="#E8C0A0" stroke-width="0.5" opacity="0.5"/>
+    <line x1="2" y1="-8" x2="2" y2="-6" stroke="#E8C0A0" stroke-width="0.5" opacity="0.5"/>
+    <line x1="16" y1="-6" x2="16" y2="-4" stroke="#E8C0A0" stroke-width="0.5" opacity="0.5"/>
+  </g>
+  <!-- Right hand -->
+  <g transform="translate(450,130)">
+    <!-- Palm -->
+    <ellipse cx="0" cy="20" rx="35" ry="25" fill="#FFDAB9" transform="rotate(-15)"/>
+    <!-- Thumb -->
+    <ellipse cx="25" cy="5" rx="10" ry="15" fill="#FFDAB9" transform="rotate(-30,25,5)"/>
+    <!-- Fingers -->
+    <ellipse cx="12" cy="-15" rx="7" ry="18" fill="#FFDAB9" transform="rotate(-10,12,-15)"/>
+    <ellipse cx="-2" cy="-18" rx="7" ry="19" fill="#FFDAB9" transform="rotate(-2,-2,-18)"/>
+    <ellipse cx="-16" cy="-16" rx="7" ry="18" fill="#FFDAB9" transform="rotate(5,-16,-16)"/>
+    <ellipse cx="-28" cy="-10" rx="6" ry="16" fill="#FFDAB9" transform="rotate(15,-28,-10)"/>
+    <!-- Finger details -->
+    <line x1="12" y1="-6" x2="12" y2="-4" stroke="#E8C0A0" stroke-width="0.5" opacity="0.5"/>
+    <line x1="-2" y1="-8" x2="-2" y2="-6" stroke="#E8C0A0" stroke-width="0.5" opacity="0.5"/>
+    <line x1="-16" y1="-6" x2="-16" y2="-4" stroke="#E8C0A0" stroke-width="0.5" opacity="0.5"/>
+  </g>
+  <!-- Gift box - main body -->
+  <rect x="220" y="140" width="160" height="100" rx="8" fill="url(#box10)" stroke="#E87090" stroke-width="1.5"/>
+  <!-- Box side shading -->
+  <rect x="220" y="200" width="160" height="40" rx="0 0 8 8" fill="url(#boxside10)" opacity="0.4"/>
+  <!-- Box lid -->
+  <rect x="215" y="125" width="170" height="25" rx="8" fill="#FFB6C1" stroke="#E87090" stroke-width="1.5"/>
+  <rect x="215" y="138" width="170" height="10" fill="#FF8FAB" opacity="0.3"/>
+  <!-- Ribbon vertical -->
+  <rect x="290" y="125" width="20" height="115" rx="2" fill="url(#ribbon10)"/>
+  <!-- Ribbon horizontal on lid -->
+  <rect x="215" y="130" width="170" height="16" rx="2" fill="url(#ribbon10)" opacity="0.8"/>
+  <!-- Bow -->
+  <g transform="translate(300,120)">
+    <!-- Left loop -->
+    <path d="M0 0 Q-30 -25 -35 -10 Q-38 0 -15 8 Q-5 5 0 0Z" fill="#FF4466"/>
+    <path d="M0 0 Q-25 -20 -30 -8 Q-32 2 -12 6 Q-3 4 0 0Z" fill="#FF6B8A" opacity="0.6"/>
+    <!-- Right loop -->
+    <path d="M0 0 Q30 -25 35 -10 Q38 0 15 8 Q5 5 0 0Z" fill="#FF4466"/>
+    <path d="M0 0 Q25 -20 30 -8 Q32 2 12 6 Q3 4 0 0Z" fill="#FF6B8A" opacity="0.6"/>
+    <!-- Center knot -->
+    <ellipse cx="0" cy="0" rx="8" ry="6" fill="#E03050"/>
+    <!-- Ribbon tails -->
+    <path d="M-5 5 Q-15 20 -20 30 Q-18 28 -10 15 Q-5 8 -5 5Z" fill="#FF4466" opacity="0.8"/>
+    <path d="M5 5 Q15 20 20 30 Q18 28 10 15 Q5 8 5 5Z" fill="#FF4466" opacity="0.8"/>
+  </g>
+  <!-- Sparkles around the gift -->
+  <path d="M180 100 L182 106 L188 106 L183 110 L185 116 L180 112 L175 116 L177 110 L172 106 L178 106Z" fill="#FFD700" opacity="0.7" filter="url(#sparkle10)">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2s" repeatCount="indefinite"/>
+  </path>
+  <path d="M420 95 L422 101 L428 101 L423 105 L425 111 L420 107 L415 111 L417 105 L412 101 L418 101Z" fill="#FFD700" opacity="0.6" filter="url(#sparkle10)">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.3s" repeatCount="indefinite"/>
+  </path>
+  <path d="M200 200 L201 204 L205 204 L202 207 L203 211 L200 208 L197 211 L198 207 L195 204 L199 204Z" fill="#FFD700" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="1.8s" repeatCount="indefinite"/>
+  </path>
+  <path d="M400 195 L401 199 L405 199 L402 202 L403 206 L400 203 L397 206 L398 202 L395 199 L399 199Z" fill="#FFD700" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="2.1s" repeatCount="indefinite"/>
+  </path>
+  <!-- Floating hearts -->
+  <path d="M170 70 Q170 63 177 63 Q184 63 184 70 Q184 80 170 88 Q156 80 156 70 Q156 63 163 63 Q170 63 170 70Z" fill="#FF6B8A" opacity="0.4">
+    <animateTransform attributeName="transform" type="translate" values="0,0;-3,-8;0,0" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <path d="M430 65 Q430 59 436 59 Q442 59 442 65 Q442 74 430 81 Q418 74 418 65 Q418 59 424 59 Q430 59 430 65Z" fill="#FF8FAB" opacity="0.35">
+    <animateTransform attributeName="transform" type="translate" values="0,0;4,-6;0,0" dur="3.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M260 60 Q260 56 264 56 Q268 56 268 60 Q268 65 260 69 Q252 65 252 60 Q252 56 256 56 Q260 56 260 60Z" fill="#FF6B8A" opacity="0.3">
+    <animateTransform attributeName="transform" type="translate" values="0,0;2,-5;0,0" dur="2.8s" repeatCount="indefinite"/>
+  </path>
+  <path d="M340 55 Q340 52 343 52 Q346 52 346 55 Q346 59 340 62 Q334 59 334 55 Q334 52 337 52 Q340 52 340 55Z" fill="#FF8FAB" opacity="0.3">
+    <animateTransform attributeName="transform" type="translate" values="0,0;-1,-6;0,0" dur="3.2s" repeatCount="indefinite"/>
+  </path>
+  <!-- Bottom sparkle dots -->
+  <circle cx="250" cy="260" r="2" fill="#FFD700" opacity="0.3"/>
+  <circle cx="350" cy="265" r="2" fill="#FFD700" opacity="0.25"/>
+  <circle cx="300" cy="270" r="1.5" fill="#FFD700" opacity="0.2"/>
+</svg>

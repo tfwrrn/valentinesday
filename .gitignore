@@ -1,0 +1,6 @@
+images/me/_originals/
+images/me/*.HEIC
+images/filler/*.HEIC
+images/me/2025-*
+images/filler/2025-*
+.DS_Store

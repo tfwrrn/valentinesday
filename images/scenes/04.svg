@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <linearGradient id="bg04" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2D1B4E"/>
+      <stop offset="100%" stop-color="#4A2060"/>
+    </linearGradient>
+    <linearGradient id="glow04" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="doorlight">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="softglow04">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="300" fill="url(#bg04)"/>
+  <!-- Floor -->
+  <rect x="0" y="250" width="600" height="50" fill="#1A0F30"/>
+  <!-- Stone texture dots -->
+  <circle cx="50" cy="265" r="1" fill="#2A1F40" opacity="0.5"/>
+  <circle cx="150" cy="270" r="1" fill="#2A1F40" opacity="0.5"/>
+  <circle cx="300" cy="262" r="1" fill="#2A1F40" opacity="0.5"/>
+  <circle cx="450" cy="268" r="1" fill="#2A1F40" opacity="0.5"/>
+  <circle cx="550" cy="275" r="1" fill="#2A1F40" opacity="0.5"/>
+  <!-- Door 1: Bamboo - Green -->
+  <g transform="translate(75,40)">
+    <!-- Glow from underneath -->
+    <rect x="-5" y="200" width="110" height="15" rx="5" fill="#90EE90" opacity="0.3" filter="url(#doorlight)"/>
+    <!-- Door -->
+    <rect x="0" y="0" width="100" height="210" rx="10" fill="#4A8C5C" stroke="#3A7C4C" stroke-width="3"/>
+    <!-- Door arch top -->
+    <path d="M0 30 Q50 -10 100 30" fill="#3A7C4C"/>
+    <!-- Bamboo symbol -->
+    <line x1="45" y1="60" x2="45" y2="160" stroke="#8FBC8F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="55" y1="55" x2="55" y2="165" stroke="#8FBC8F" stroke-width="4" stroke-linecap="round"/>
+    <!-- Bamboo segments -->
+    <line x1="42" y1="80" x2="48" y2="80" stroke="#6DA06D" stroke-width="1.5"/>
+    <line x1="42" y1="110" x2="48" y2="110" stroke="#6DA06D" stroke-width="1.5"/>
+    <line x1="42" y1="140" x2="48" y2="140" stroke="#6DA06D" stroke-width="1.5"/>
+    <line x1="52" y1="75" x2="58" y2="75" stroke="#6DA06D" stroke-width="1.5"/>
+    <line x1="52" y1="105" x2="58" y2="105" stroke="#6DA06D" stroke-width="1.5"/>
+    <line x1="52" y1="135" x2="58" y2="135" stroke="#6DA06D" stroke-width="1.5"/>
+    <!-- Leaves -->
+    <path d="M45 60 Q30 50 25 55 Q30 60 45 60Z" fill="#8FBC8F" opacity="0.8"/>
+    <path d="M55 55 Q65 42 72 45 Q68 52 55 55Z" fill="#8FBC8F" opacity="0.8"/>
+    <path d="M45 95 Q30 85 22 90 Q28 97 45 95Z" fill="#8FBC8F" opacity="0.7"/>
+    <!-- Door knob -->
+    <circle cx="80" cy="120" r="5" fill="#B8860B"/>
+    <!-- Glow strip under door -->
+    <rect x="5" y="205" width="90" height="4" rx="2" fill="#90EE90" opacity="0.5"/>
+  </g>
+  <!-- Door 2: Wine/Grapes - Deep Red -->
+  <g transform="translate(200,40)">
+    <rect x="-5" y="200" width="110" height="15" rx="5" fill="#DC143C" opacity="0.3" filter="url(#doorlight)"/>
+    <rect x="0" y="0" width="100" height="210" rx="10" fill="#8B0020" stroke="#6B0018" stroke-width="3"/>
+    <path d="M0 30 Q50 -10 100 30" fill="#6B0018"/>
+    <!-- Wine glass / grapes symbol -->
+    <!-- Grape cluster -->
+    <circle cx="45" cy="85" r="5" fill="#9B59B6" opacity="0.8"/>
+    <circle cx="55" cy="85" r="5" fill="#9B59B6" opacity="0.8"/>
+    <circle cx="50" cy="78" r="5" fill="#8E44AD" opacity="0.8"/>
+    <circle cx="42" cy="93" r="5" fill="#9B59B6" opacity="0.7"/>
+    <circle cx="52" cy="93" r="5" fill="#9B59B6" opacity="0.7"/>
+    <circle cx="47" cy="100" r="5" fill="#8E44AD" opacity="0.7"/>
+    <!-- Grape stem -->
+    <path d="M50 73 Q55 60 52 55" fill="none" stroke="#5A8A4A" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Leaf -->
+    <path d="M52 55 Q60 50 58 58 Q55 62 52 55Z" fill="#6DB86B" opacity="0.7"/>
+    <!-- Wine glass below -->
+    <path d="M42 120 Q50 135 58 120" fill="none" stroke="#D4A0A0" stroke-width="1.5"/>
+    <path d="M42 120 Q50 110 58 120" fill="#8B0030" opacity="0.4"/>
+    <line x1="50" y1="135" x2="50" y2="155" stroke="#D4A0A0" stroke-width="1.5"/>
+    <line x1="42" y1="155" x2="58" y2="155" stroke="#D4A0A0" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="20" cy="120" r="5" fill="#B8860B"/>
+    <rect x="5" y="205" width="90" height="4" rx="2" fill="#DC143C" opacity="0.5"/>
+  </g>
+  <!-- Door 3: Lavender - Purple -->
+  <g transform="translate(325,40)">
+    <rect x="-5" y="200" width="110" height="15" rx="5" fill="#DDA0DD" opacity="0.3" filter="url(#doorlight)"/>
+    <rect x="0" y="0" width="100" height="210" rx="10" fill="#7B68AE" stroke="#5B488E" stroke-width="3"/>
+    <path d="M0 30 Q50 -10 100 30" fill="#5B488E"/>
+    <!-- Lavender sprigs -->
+    <line x1="40" y1="150" x2="40" y2="70" stroke="#5A8A5A" stroke-width="2" stroke-linecap="round"/>
+    <line x1="50" y1="150" x2="50" y2="65" stroke="#5A8A5A" stroke-width="2" stroke-linecap="round"/>
+    <line x1="60" y1="150" x2="60" y2="72" stroke="#5A8A5A" stroke-width="2" stroke-linecap="round"/>
+    <!-- Lavender buds -->
+    <ellipse cx="40" cy="72" rx="3" ry="4" fill="#DDA0DD"/>
+    <ellipse cx="40" cy="80" rx="3" ry="4" fill="#DDA0DD"/>
+    <ellipse cx="40" cy="88" rx="3" ry="4" fill="#DDA0DD" opacity="0.8"/>
+    <ellipse cx="50" cy="67" rx="3" ry="4" fill="#DDA0DD"/>
+    <ellipse cx="50" cy="75" rx="3" ry="4" fill="#DDA0DD"/>
+    <ellipse cx="50" cy="83" rx="3" ry="4" fill="#DDA0DD" opacity="0.8"/>
+    <ellipse cx="50" cy="91" rx="3" ry="4" fill="#DDA0DD" opacity="0.6"/>
+    <ellipse cx="60" cy="74" rx="3" ry="4" fill="#DDA0DD"/>
+    <ellipse cx="60" cy="82" rx="3" ry="4" fill="#DDA0DD"/>
+    <ellipse cx="60" cy="90" rx="3" ry="4" fill="#DDA0DD" opacity="0.8"/>
+    <!-- Ribbon tie -->
+    <path d="M35 140 Q50 135 65 140" fill="none" stroke="#FFB6C1" stroke-width="1.5"/>
+    <circle cx="80" cy="120" r="5" fill="#B8860B"/>
+    <rect x="5" y="205" width="90" height="4" rx="2" fill="#DDA0DD" opacity="0.5"/>
+  </g>
+  <!-- Door 4: Herbs - Warm Orange/Green -->
+  <g transform="translate(450,40)">
+    <rect x="-5" y="200" width="110" height="15" rx="5" fill="#FFA500" opacity="0.3" filter="url(#doorlight)"/>
+    <rect x="0" y="0" width="100" height="210" rx="10" fill="#CC7A2E" stroke="#AA5A1E" stroke-width="3"/>
+    <path d="M0 30 Q50 -10 100 30" fill="#AA5A1E"/>
+    <!-- Herb sprig rosemary style -->
+    <line x1="50" y1="150" x2="50" y2="65" stroke="#5A8A4A" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Rosemary leaves -->
+    <path d="M50 70 Q40 65 38 68 Q40 72 50 70Z" fill="#6DB86B"/>
+    <path d="M50 70 Q60 65 62 68 Q60 72 50 70Z" fill="#6DB86B"/>
+    <path d="M50 80 Q38 75 36 78 Q38 82 50 80Z" fill="#6DB86B"/>
+    <path d="M50 80 Q62 75 64 78 Q62 82 50 80Z" fill="#6DB86B"/>
+    <path d="M50 90 Q40 85 38 88 Q40 92 50 90Z" fill="#6DB86B" opacity="0.9"/>
+    <path d="M50 90 Q60 85 62 88 Q60 92 50 90Z" fill="#6DB86B" opacity="0.9"/>
+    <path d="M50 100 Q38 95 36 98 Q38 102 50 100Z" fill="#6DB86B" opacity="0.8"/>
+    <path d="M50 100 Q62 95 64 98 Q62 102 50 100Z" fill="#6DB86B" opacity="0.8"/>
+    <path d="M50 110 Q40 105 38 108 Q40 112 50 110Z" fill="#6DB86B" opacity="0.7"/>
+    <path d="M50 110 Q60 105 62 108 Q60 112 50 110Z" fill="#6DB86B" opacity="0.7"/>
+    <path d="M50 120 Q38 115 36 118 Q38 122 50 120Z" fill="#6DB86B" opacity="0.6"/>
+    <path d="M50 120 Q62 115 64 118 Q62 122 50 120Z" fill="#6DB86B" opacity="0.6"/>
+    <circle cx="20" cy="120" r="5" fill="#B8860B"/>
+    <rect x="5" y="205" width="90" height="4" rx="2" fill="#FFA500" opacity="0.5"/>
+  </g>
+  <!-- Stars in the background -->
+  <circle cx="30" cy="15" r="1.5" fill="#FFF" opacity="0.6"/>
+  <circle cx="160" cy="25" r="1" fill="#FFF" opacity="0.5"/>
+  <circle cx="290" cy="10" r="1.5" fill="#FFF" opacity="0.4"/>
+  <circle cx="430" cy="20" r="1" fill="#FFF" opacity="0.5"/>
+  <circle cx="570" cy="15" r="1.5" fill="#FFF" opacity="0.6"/>
+  <circle cx="100" cy="35" r="1" fill="#FFF" opacity="0.3"/>
+  <circle cx="520" cy="30" r="1" fill="#FFF" opacity="0.3"/>
+</svg>

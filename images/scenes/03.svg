@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <linearGradient id="bg03" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFF5E6"/>
+      <stop offset="100%" stop-color="#FFE4D0"/>
+    </linearGradient>
+    <filter id="soft03">
+      <feGaussianBlur stdDeviation="1"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="300" fill="url(#bg03)"/>
+  <!-- Floor -->
+  <rect x="0" y="220" width="600" height="80" rx="0" fill="#DEB887" opacity="0.3"/>
+  <!-- Door frame -->
+  <rect x="200" y="20" width="200" height="210" rx="8" fill="#8B6F5E" stroke="#6B4F3E" stroke-width="5"/>
+  <!-- Door -->
+  <rect x="210" y="28" width="180" height="195" rx="5" fill="#A0522D"/>
+  <!-- Door panels -->
+  <rect x="225" y="45" width="70" height="60" rx="5" fill="#8B4513" opacity="0.5"/>
+  <rect x="305" y="45" width="70" height="60" rx="5" fill="#8B4513" opacity="0.5"/>
+  <rect x="225" y="120" width="70" height="80" rx="5" fill="#8B4513" opacity="0.5"/>
+  <rect x="305" y="120" width="70" height="80" rx="5" fill="#8B4513" opacity="0.5"/>
+  <!-- Door handle -->
+  <circle cx="365" cy="130" r="6" fill="#D4AF37" stroke="#B8960C" stroke-width="1"/>
+  <circle cx="365" cy="130" r="3" fill="#E8C84A"/>
+  <!-- Heart door knocker -->
+  <path d="M300 55 Q300 48 307 48 Q314 48 314 55 Q314 64 300 72 Q286 64 286 55 Q286 48 293 48 Q300 48 300 55Z" fill="#D4AF37" stroke="#B8960C" stroke-width="1"/>
+  <!-- Doormat -->
+  <rect x="220" y="225" width="160" height="30" rx="5" fill="#CD853F"/>
+  <rect x="225" y="228" width="150" height="24" rx="3" fill="#D2B48C"/>
+  <!-- Doormat pattern -->
+  <line x1="240" y1="228" x2="240" y2="252" stroke="#C8A880" stroke-width="1"/>
+  <line x1="260" y1="228" x2="260" y2="252" stroke="#C8A880" stroke-width="1"/>
+  <line x1="280" y1="228" x2="280" y2="252" stroke="#C8A880" stroke-width="1"/>
+  <line x1="300" y1="228" x2="300" y2="252" stroke="#C8A880" stroke-width="1"/>
+  <line x1="320" y1="228" x2="320" y2="252" stroke="#C8A880" stroke-width="1"/>
+  <line x1="340" y1="228" x2="340" y2="252" stroke="#C8A880" stroke-width="1"/>
+  <line x1="360" y1="228" x2="360" y2="252" stroke="#C8A880" stroke-width="1"/>
+  <!-- Cat body -->
+  <g transform="translate(300,195)">
+    <!-- Cat tail -->
+    <path d="M25 -10 Q50 -40 55 -55 Q58 -65 50 -60" fill="none" stroke="#FF8C50" stroke-width="5" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="rotate" values="0,25,-10;10,25,-10;0,25,-10" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <!-- Cat body -->
+    <ellipse cx="0" cy="5" rx="25" ry="20" fill="#FF9A60"/>
+    <!-- Cat chest -->
+    <ellipse cx="0" cy="10" rx="15" ry="12" fill="#FFDAB9"/>
+    <!-- Front paws -->
+    <ellipse cx="-12" cy="22" rx="7" ry="5" fill="#FF9A60"/>
+    <ellipse cx="12" cy="22" rx="7" ry="5" fill="#FF9A60"/>
+    <!-- Cat head -->
+    <circle cx="0" cy="-20" r="20" fill="#FF9A60"/>
+    <!-- Ears -->
+    <polygon points="-15,-38 -20,-18 -5,-22" fill="#FF9A60"/>
+    <polygon points="15,-38 20,-18 5,-22" fill="#FF9A60"/>
+    <!-- Inner ears -->
+    <polygon points="-14,-34 -17,-22 -8,-24" fill="#FFB88C"/>
+    <polygon points="14,-34 17,-22 8,-24" fill="#FFB88C"/>
+    <!-- Eyes - big and green -->
+    <ellipse cx="-8" cy="-22" rx="7" ry="8" fill="#FFFFFF"/>
+    <ellipse cx="8" cy="-22" rx="7" ry="8" fill="#FFFFFF"/>
+    <ellipse cx="-7" cy="-21" rx="5" ry="6" fill="#50C878"/>
+    <ellipse cx="9" cy="-21" rx="5" ry="6" fill="#50C878"/>
+    <ellipse cx="-6" cy="-20" rx="2.5" ry="4" fill="#1A1A1A"/>
+    <ellipse cx="10" cy="-20" rx="2.5" ry="4" fill="#1A1A1A"/>
+    <!-- Eye shine -->
+    <circle cx="-5" cy="-23" r="1.5" fill="#FFFFFF"/>
+    <circle cx="11" cy="-23" r="1.5" fill="#FFFFFF"/>
+    <!-- Nose -->
+    <polygon points="0,-14 -3,-11 3,-11" fill="#FF6B8A"/>
+    <!-- Mouth -->
+    <path d="M-4 -9 Q0 -6 4 -9" fill="none" stroke="#6B4F3E" stroke-width="1" stroke-linecap="round"/>
+    <!-- Whiskers -->
+    <line x1="-15" y1="-15" x2="-35" y2="-18" stroke="#6B4F3E" stroke-width="0.8"/>
+    <line x1="-15" y1="-12" x2="-35" y2="-10" stroke="#6B4F3E" stroke-width="0.8"/>
+    <line x1="-15" y1="-9" x2="-33" y2="-4" stroke="#6B4F3E" stroke-width="0.8"/>
+    <line x1="15" y1="-15" x2="35" y2="-18" stroke="#6B4F3E" stroke-width="0.8"/>
+    <line x1="15" y1="-12" x2="35" y2="-10" stroke="#6B4F3E" stroke-width="0.8"/>
+    <line x1="15" y1="-9" x2="33" y2="-4" stroke="#6B4F3E" stroke-width="0.8"/>
+    <!-- Orange stripes -->
+    <path d="M-10 -35 Q-5 -28 -12 -25" fill="none" stroke="#E07830" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M0 -40 Q2 -32 -2 -28" fill="none" stroke="#E07830" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M10 -35 Q5 -28 12 -25" fill="none" stroke="#E07830" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <!-- Small hearts floating around cat -->
+  <path d="M250 170 Q250 166 254 166 Q258 166 258 170 Q258 175 250 179 Q242 175 242 170 Q242 166 246 166 Q250 166 250 170Z" fill="#FF6B8A" opacity="0.4">
+    <animateTransform attributeName="transform" type="translate" values="0,0;-2,-5;0,0" dur="2.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M355 165 Q355 162 358 162 Q361 162 361 165 Q361 169 355 172 Q349 169 349 165 Q349 162 352 162 Q355 162 355 165Z" fill="#FF8FAB" opacity="0.3">
+    <animateTransform attributeName="transform" type="translate" values="0,0;3,-4;0,0" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <!-- Wall details - small flower pot -->
+  <rect x="80" y="180" width="30" height="30" rx="3" fill="#CD853F"/>
+  <path d="M80 180 Q95 170 110 180" fill="#228B22" opacity="0.6"/>
+  <circle cx="90" cy="173" r="4" fill="#FF6B8A"/>
+  <circle cx="100" cy="170" r="4" fill="#FF8FAB"/>
+  <!-- Flower pot right -->
+  <rect x="490" y="180" width="30" height="30" rx="3" fill="#CD853F"/>
+  <path d="M490 180 Q505 170 520 180" fill="#228B22" opacity="0.6"/>
+  <circle cx="500" cy="173" r="4" fill="#FF8FAB"/>
+  <circle cx="510" cy="170" r="4" fill="#FF6B8A"/>
+</svg>

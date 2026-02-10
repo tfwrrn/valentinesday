@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <linearGradient id="sky11" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A0A2E"/>
+      <stop offset="30%" stop-color="#1A1045"/>
+      <stop offset="60%" stop-color="#2D1B4E"/>
+      <stop offset="100%" stop-color="#4A2040"/>
+    </linearGradient>
+    <linearGradient id="cityglow11" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#FFA500" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#FF8C50" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#FF8C50" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="starglow11">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="warmglow11">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+  <!-- Night sky -->
+  <rect width="600" height="300" fill="url(#sky11)"/>
+  <!-- Stars -->
+  <circle cx="40" cy="20" r="1.5" fill="#FFF" opacity="0.7" filter="url(#starglow11)">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="40" r="1" fill="#FFF" opacity="0.5"/>
+  <circle cx="160" cy="15" r="1.5" fill="#FFF" opacity="0.6" filter="url(#starglow11)">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="220" cy="35" r="1" fill="#FFF" opacity="0.4"/>
+  <circle cx="300" cy="10" r="1.5" fill="#FFF" opacity="0.7" filter="url(#starglow11)">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="350" cy="30" r="1" fill="#FFF" opacity="0.5"/>
+  <circle cx="420" cy="18" r="1.5" fill="#FFF" opacity="0.6" filter="url(#starglow11)">
+    <animate attributeName="opacity" values="0.6;0.3;0.6" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="480" cy="45" r="1" fill="#FFF" opacity="0.4"/>
+  <circle cx="530" cy="22" r="1.5" fill="#FFF" opacity="0.6" filter="url(#starglow11)"/>
+  <circle cx="570" cy="40" r="1" fill="#FFF" opacity="0.5"/>
+  <circle cx="70" cy="65" r="1" fill="#FFF" opacity="0.4"/>
+  <circle cx="200" cy="55" r="0.8" fill="#FFF" opacity="0.3"/>
+  <circle cx="380" cy="50" r="0.8" fill="#FFF" opacity="0.3"/>
+  <circle cx="500" cy="60" r="1" fill="#FFF" opacity="0.4"/>
+  <circle cx="260" cy="60" r="0.8" fill="#FFF" opacity="0.3"/>
+  <circle cx="450" cy="55" r="0.8" fill="#FFF" opacity="0.35"/>
+  <circle cx="140" cy="70" r="0.8" fill="#FFF" opacity="0.3"/>
+  <!-- Distant city lights -->
+  <rect x="0" y="200" width="600" height="100" fill="url(#cityglow11)"/>
+  <!-- City skyline - far background -->
+  <rect x="10" y="195" width="25" height="105" fill="#1A0F25"/>
+  <rect x="30" y="180" width="20" height="120" fill="#150D28"/>
+  <rect x="45" y="190" width="35" height="110" fill="#1A0F25"/>
+  <rect x="75" y="175" width="18" height="125" fill="#150D28"/>
+  <rect x="88" y="185" width="30" height="115" fill="#1A0F25"/>
+  <rect x="115" y="170" width="22" height="130" fill="#150D28"/>
+  <rect x="132" y="188" width="28" height="112" fill="#1A0F25"/>
+  <rect x="155" y="178" width="20" height="122" fill="#150D28"/>
+  <rect x="170" y="192" width="35" height="108" fill="#1A0F25"/>
+  <rect x="200" y="165" width="25" height="135" fill="#150D28"/>
+  <rect x="220" y="182" width="30" height="118" fill="#1A0F25"/>
+  <rect x="380" y="182" width="30" height="118" fill="#1A0F25"/>
+  <rect x="405" y="168" width="22" height="132" fill="#150D28"/>
+  <rect x="422" y="185" width="35" height="115" fill="#1A0F25"/>
+  <rect x="452" y="175" width="20" height="125" fill="#150D28"/>
+  <rect x="467" y="190" width="28" height="110" fill="#1A0F25"/>
+  <rect x="490" y="178" width="25" height="122" fill="#150D28"/>
+  <rect x="510" y="188" width="30" height="112" fill="#1A0F25"/>
+  <rect x="535" y="172" width="22" height="128" fill="#150D28"/>
+  <rect x="552" y="185" width="25" height="115" fill="#1A0F25"/>
+  <rect x="572" y="195" width="28" height="105" fill="#150D28"/>
+  <!-- City windows -->
+  <rect x="18" y="200" width="3" height="3" rx="0.5" fill="#FFD700" opacity="0.6"/>
+  <rect x="36" y="188" width="3" height="3" rx="0.5" fill="#FFA500" opacity="0.5"/>
+  <rect x="55" y="198" width="3" height="3" rx="0.5" fill="#FFD700" opacity="0.6"/>
+  <rect x="80" y="182" width="3" height="3" rx="0.5" fill="#FFA500" opacity="0.5"/>
+  <rect x="95" y="195" width="3" height="3" rx="0.5" fill="#FFD700" opacity="0.6"/>
+  <rect x="120" y="178" width="3" height="3" rx="0.5" fill="#FFA500" opacity="0.7"/>
+  <rect x="140" y="195" width="3" height="3" rx="0.5" fill="#FFD700" opacity="0.5"/>
+  <rect x="160" y="185" width="3" height="3" rx="0.5" fill="#FFA500" opacity="0.6"/>
+  <rect x="180" y="198" width="3" height="3" rx="0.5" fill="#FFD700" opacity="0.5"/>
+  <rect x="207" y="172" width="3" height="3" rx="0.5" fill="#FFA500" opacity="0.7"/>
+  <rect x="228" y="190" width="3" height="3" rx="0.5" fill="#FFD700" opacity="0.6"/>
+  <rect x="388" y="190" width="3" height="3" rx="0.5" fill="#FFD700" opacity="0.6"/>
+  <rect x="412" y="176" width="3" height="3" rx="0.5" fill="#FFA500" opacity="0.5"/>
+  <rect x="435" y="192" width="3" height="3" rx="0.5" fill="#FFD700" opacity="0.6"/>
+  <rect x="458" y="182" width="3" height="3" rx="0.5" fill="#FFA500" opacity="0.5"/>
+  <rect x="475" y="198" width="3" height="3" rx="0.5" fill="#FFD700" opacity="0.6"/>
+  <rect x="498" y="185" width="3" height="3" rx="0.5" fill="#FFA500" opacity="0.7"/>
+  <rect x="520" y="195" width="3" height="3" rx="0.5" fill="#FFD700" opacity="0.5"/>
+  <rect x="542" y="180" width="3" height="3" rx="0.5" fill="#FFA500" opacity="0.6"/>
+  <rect x="560" y="192" width="3" height="3" rx="0.5" fill="#FFD700" opacity="0.5"/>
+  <rect x="580" y="200" width="3" height="3" rx="0.5" fill="#FFA500" opacity="0.5"/>
+  <!-- Overlook platform/railing -->
+  <rect x="240" y="220" width="120" height="5" rx="2" fill="#3A2A45"/>
+  <!-- Railing posts -->
+  <rect x="245" y="195" width="3" height="28" rx="1" fill="#4A3A55"/>
+  <rect x="265" y="195" width="3" height="28" rx="1" fill="#4A3A55"/>
+  <rect x="285" y="195" width="3" height="28" rx="1" fill="#4A3A55"/>
+  <rect x="335" y="195" width="3" height="28" rx="1" fill="#4A3A55"/>
+  <rect x="352" y="195" width="3" height="28" rx="1" fill="#4A3A55"/>
+  <!-- Railing top bar -->
+  <rect x="243" y="195" width="115" height="3" rx="1.5" fill="#4A3A55"/>
+  <!-- Two silhouettes -->
+  <!-- Person 1 (left) -->
+  <g transform="translate(290,100)">
+    <!-- Head -->
+    <circle cx="0" cy="0" r="14" fill="#1A0F25"/>
+    <!-- Hair suggestion -->
+    <path d="M-14 -5 Q-15 -15 -5 -17 Q0 -18 5 -17 Q15 -15 14 -5" fill="#1A0F25"/>
+    <!-- Body -->
+    <path d="M-12 12 Q-15 40 -18 90 Q-10 92 0 92 Q10 92 15 90 Q10 40 8 12Z" fill="#1A0F25"/>
+    <!-- Arm reaching toward other person -->
+    <path d="M8 30 Q18 35 28 38 Q32 38 35 36" fill="none" stroke="#1A0F25" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <!-- Person 2 (right) -->
+  <g transform="translate(330,97)">
+    <!-- Head -->
+    <circle cx="0" cy="0" r="13" fill="#1A0F25"/>
+    <!-- Longer hair suggestion -->
+    <path d="M-13 -3 Q-15 -15 -5 -17 Q0 -18 5 -17 Q15 -15 14 -3 Q16 10 13 20" fill="#1A0F25"/>
+    <path d="M-14 -3 Q-16 10 -14 20" fill="none" stroke="#1A0F25" stroke-width="3"/>
+    <!-- Body -->
+    <path d="M-10 11 Q-14 40 -16 93 Q-8 95 0 95 Q8 95 13 93 Q8 40 6 11Z" fill="#1A0F25"/>
+    <!-- Arm reaching toward other person -->
+    <path d="M-8 33 Q-18 36 -25 38" fill="none" stroke="#1A0F25" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <!-- Warm glow around the couple -->
+  <ellipse cx="310" cy="160" rx="50" ry="60" fill="#FFA500" opacity="0.04" filter="url(#warmglow11)"/>
+  <!-- Hearts floating above -->
+  <path d="M310 75 Q310 68 317 68 Q324 68 324 75 Q324 85 310 93 Q296 85 296 75 Q296 68 303 68 Q310 68 310 75Z" fill="#FF4466" opacity="0.4">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-5;0,0" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <path d="M280 60 Q280 56 284 56 Q288 56 288 60 Q288 65 280 69 Q272 65 272 60 Q272 56 276 56 Q280 56 280 60Z" fill="#FF6B8A" opacity="0.3">
+    <animateTransform attributeName="transform" type="translate" values="0,0;-2,-4;0,0" dur="3.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M345 63 Q345 60 348 60 Q351 60 351 63 Q351 67 345 70 Q339 67 339 63 Q339 60 342 60 Q345 60 345 63Z" fill="#FF8FAB" opacity="0.25">
+    <animateTransform attributeName="transform" type="translate" values="0,0;3,-3;0,0" dur="4s" repeatCount="indefinite"/>
+  </path>
+  <!-- Ground beneath railing -->
+  <path d="M200 225 Q300 235 400 225 L400 300 L200 300Z" fill="#150D28" opacity="0.5"/>
+</svg>

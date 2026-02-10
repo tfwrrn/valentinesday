@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <linearGradient id="sky12" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0D0628"/>
+      <stop offset="40%" stop-color="#1A1045"/>
+      <stop offset="70%" stop-color="#2D1B4E"/>
+      <stop offset="100%" stop-color="#3A2555"/>
+    </linearGradient>
+    <filter id="glow12">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow12">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <radialGradient id="fireglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFA500" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#FFA500" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Night sky -->
+  <rect width="600" height="300" fill="url(#sky12)"/>
+  <!-- Stars -->
+  <circle cx="45" cy="18" r="1.5" fill="#FFF" opacity="0.7" filter="url(#glow12)">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="110" cy="40" r="1" fill="#FFF" opacity="0.5"/>
+  <circle cx="180" cy="12" r="1.5" fill="#FFF" opacity="0.6" filter="url(#glow12)">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="250" cy="30" r="1" fill="#FFF" opacity="0.4"/>
+  <circle cx="320" cy="15" r="1.5" fill="#FFF" opacity="0.7" filter="url(#glow12)"/>
+  <circle cx="400" cy="25" r="1" fill="#FFF" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="460" cy="38" r="1.5" fill="#FFF" opacity="0.6" filter="url(#glow12)"/>
+  <circle cx="530" cy="20" r="1" fill="#FFF" opacity="0.5"/>
+  <circle cx="570" cy="45" r="1.5" fill="#FFF" opacity="0.6" filter="url(#glow12)">
+    <animate attributeName="opacity" values="0.6;0.3;0.6" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="75" cy="60" r="0.8" fill="#FFF" opacity="0.4"/>
+  <circle cx="200" cy="55" r="0.8" fill="#FFF" opacity="0.35"/>
+  <circle cx="350" cy="50" r="0.8" fill="#FFF" opacity="0.3"/>
+  <circle cx="500" cy="58" r="0.8" fill="#FFF" opacity="0.35"/>
+  <circle cx="140" cy="75" r="0.8" fill="#FFF" opacity="0.3"/>
+  <circle cx="440" cy="68" r="0.8" fill="#FFF" opacity="0.3"/>
+  <!-- Crescent moon -->
+  <circle cx="480" cy="55" r="22" fill="#FFFACD" filter="url(#glow12)"/>
+  <circle cx="490" cy="48" r="18" fill="url(#sky12)"/>
+  <circle cx="480" cy="55" r="35" fill="#FFFACD" opacity="0.04" filter="url(#softglow12)"/>
+  <!-- Gentle hills -->
+  <path d="M0 220 Q100 190 200 210 Q300 230 400 200 Q500 180 600 210 L600 300 L0 300Z" fill="#1A1030" opacity="0.6"/>
+  <path d="M0 240 Q150 215 300 235 Q450 250 600 230 L600 300 L0 300Z" fill="#150D25" opacity="0.5"/>
+  <!-- Grass hints -->
+  <path d="M0 250 Q20 245 40 250 Q60 245 80 250 Q100 245 120 250 Q140 245 160 250 Q180 245 200 250 Q220 245 240 250 Q260 245 280 250 Q300 245 320 250 Q340 245 360 250 Q380 245 400 250 Q420 245 440 250 Q460 245 480 250 Q500 245 520 250 Q540 245 560 250 Q580 245 600 250 L600 300 L0 300Z" fill="#1A1030" opacity="0.3"/>
+  <!-- Warm fire glow on ground -->
+  <circle cx="300" cy="250" r="120" fill="url(#fireglow)"/>
+  <!-- Blanket on ground -->
+  <path d="M220 260 Q260 250 300 252 Q340 250 380 260 Q385 268 380 275 Q340 270 300 272 Q260 270 220 275 Q215 268 220 260Z" fill="#8B3A5E" opacity="0.5"/>
+  <path d="M225 262 Q260 253 300 255 Q340 253 375 262 Q378 268 375 273 Q340 267 300 269 Q260 267 225 273 Q222 268 225 262Z" fill="#A84A70" opacity="0.3"/>
+  <!-- Small fire/vuurkorf in center -->
+  <g transform="translate(300, 235)">
+    <!-- Fire bowl -->
+    <path d="M-18 10 Q-20 0 -15 -2 L15 -2 Q20 0 18 10Z" fill="#4A3A55" opacity="0.7"/>
+    <ellipse cx="0" cy="10" rx="18" ry="4" fill="#3A2A45" opacity="0.6"/>
+    <!-- Flames -->
+    <path d="M0 -5 Q5 -20 3 -30 Q0 -35 -2 -28 Q-5 -20 0 -5Z" fill="#FF6B00" opacity="0.8">
+      <animateTransform attributeName="transform" type="scale" values="1,1;1.05,1.1;0.95,1.05;1,1" dur="0.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M-5 -3 Q-8 -15 -5 -22 Q-3 -25 -1 -18 Q0 -12 -5 -3Z" fill="#FFA500" opacity="0.7">
+      <animateTransform attributeName="transform" type="scale" values="1,1;0.95,1.08;1.05,0.95;1,1" dur="0.7s" repeatCount="indefinite"/>
+    </path>
+    <path d="M4 -2 Q8 -12 6 -18 Q4 -20 3 -14 Q1 -8 4 -2Z" fill="#FFD700" opacity="0.7">
+      <animateTransform attributeName="transform" type="scale" values="1,1;1.08,0.95;0.95,1.08;1,1" dur="0.9s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0 -4 Q2 -12 0 -16 Q-1 -12 0 -4Z" fill="#FFEDA0" opacity="0.6"/>
+    <!-- Ember particles -->
+    <circle cx="-5" cy="-35" r="1" fill="#FFA500" opacity="0.5">
+      <animate attributeName="cy" values="-35;-55;-75" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.3;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="3" cy="-32" r="0.8" fill="#FFD700" opacity="0.4">
+      <animate attributeName="cy" values="-32;-50;-68" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.2;0" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="7" cy="-30" r="0.6" fill="#FF6B00" opacity="0.4">
+      <animate attributeName="cy" values="-30;-48;-65" dur="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.2;0" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Fire glow -->
+    <circle cx="0" cy="-10" r="25" fill="#FFA500" opacity="0.06" filter="url(#softglow12)"/>
+  </g>
+  <!-- Two mugs near the blanket -->
+  <g transform="translate(255, 258)">
+    <rect x="0" y="0" width="10" height="10" rx="2" fill="#5A3A45" opacity="0.6"/>
+    <path d="M10 2 Q15 2 15 6 Q15 10 10 10" fill="none" stroke="#5A3A45" stroke-width="1.5" opacity="0.5"/>
+    <!-- Steam -->
+    <path d="M3 -2 Q2 -6 4 -10" fill="none" stroke="#FFF" stroke-width="0.5" opacity="0.2"/>
+    <path d="M7 -1 Q8 -5 6 -9" fill="none" stroke="#FFF" stroke-width="0.5" opacity="0.2"/>
+  </g>
+  <g transform="translate(340, 260)">
+    <rect x="0" y="0" width="10" height="10" rx="2" fill="#5A3A45" opacity="0.6"/>
+    <path d="M10 2 Q15 2 15 6 Q15 10 10 10" fill="none" stroke="#5A3A45" stroke-width="1.5" opacity="0.5"/>
+    <path d="M4 -2 Q3 -6 5 -10" fill="none" stroke="#FFF" stroke-width="0.5" opacity="0.2"/>
+    <path d="M7 -1 Q8 -5 6 -8" fill="none" stroke="#FFF" stroke-width="0.5" opacity="0.2"/>
+  </g>
+  <!-- Hearts floating up from the scene -->
+  <path d="M290 210 Q290 206 294 206 Q298 206 298 210 Q298 215 290 219 Q282 215 282 210 Q282 206 286 206 Q290 206 290 210Z" fill="#FF6B8A" opacity="0.3">
+    <animateTransform attributeName="transform" type="translate" values="0,0;-3,-20;-6,-40" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.15;0" dur="4s" repeatCount="indefinite"/>
+  </path>
+  <path d="M315 205 Q315 202 318 202 Q321 202 321 205 Q321 209 315 212 Q309 209 309 205 Q309 202 312 202 Q315 202 315 205Z" fill="#FF8FAB" opacity="0.25">
+    <animateTransform attributeName="transform" type="translate" values="0,0;4,-25;8,-50" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.25;0.1;0" dur="5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M302 215 Q302 212 305 212 Q308 212 308 215 Q308 219 302 222 Q296 219 296 215 Q296 212 299 212 Q302 212 302 215Z" fill="#FF6B8A" opacity="0.2">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-22;0,-45" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.1;0" dur="4.5s" repeatCount="indefinite"/>
+  </path>
+</svg>

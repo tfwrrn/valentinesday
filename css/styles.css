@@ -1,0 +1,311 @@
+/* Animated gradient background */
+.animated-bg {
+  background: linear-gradient(-45deg, #fce4ec, #fef7f0, #fecdd3, #fff1f2);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Screen transitions */
+.screen {
+  display: none !important;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.screen.active {
+  display: flex !important;
+  opacity: 1;
+}
+
+#login-screen.active {
+  align-items: center;
+  justify-content: center;
+}
+
+#captcha-screen.active,
+#ending-screen.active {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#adventure-screen.active {
+  flex-direction: column;
+  align-items: center;
+}
+
+.screen.fade-out {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.screen.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Heart icon pulse */
+.heart-icon {
+  animation: heartPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes heartPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+/* Shake animation */
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 50%, 90% { transform: translateX(-6px); }
+  30%, 70% { transform: translateX(6px); }
+}
+
+/* Captcha photo styles */
+.captcha-cell {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.captcha-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.captcha-cell:hover img {
+  transform: scale(1.05);
+}
+
+.captcha-cell:active {
+  transform: scale(0.95);
+}
+
+.captcha-cell.correct {
+  border-color: #f43f5e;
+  box-shadow: 0 0 12px rgba(244, 63, 94, 0.4);
+}
+
+.captcha-cell.correct::after {
+  content: '❤️';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: rgba(244, 63, 94, 0.15);
+  animation: heartPop 0.4s ease;
+}
+
+@keyframes heartPop {
+  0% { transform: scale(0); opacity: 0; }
+  60% { transform: scale(1.3); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.captcha-cell.wrong {
+  animation: wrongFlash 0.5s ease;
+}
+
+@keyframes wrongFlash {
+  0%, 100% { border-color: transparent; background-color: transparent; }
+  25%, 75% { border-color: #ef4444; background-color: rgba(239, 68, 68, 0.1); }
+  10%, 50%, 90% { transform: translateX(-3px); }
+  30%, 70% { transform: translateX(3px); }
+}
+
+/* Skeleton placeholder for images */
+.captcha-cell .skeleton {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #fce4ec 25%, #fef7f0 50%, #fce4ec 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Typewriter cursor */
+#scene-text .cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background: #f43f5e;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Adventure option cards */
+.option-card {
+  background: white;
+  border: 2px solid #fecdd3;
+  border-radius: 1rem;
+  padding: 1rem 1.25rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.option-card:hover {
+  border-color: #f43f5e;
+  background: #fff1f2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(244, 63, 94, 0.15);
+}
+
+.option-card:active {
+  transform: scale(0.98);
+}
+
+.option-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.option-card.selected {
+  border-color: #f43f5e;
+  background: linear-gradient(135deg, #fff1f2, #fce4ec);
+  transform: scale(1.02);
+}
+
+.option-card.fade-out {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+/* Scene text fade-out */
+#scene-text.fade-out {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: all 0.3s ease;
+}
+
+/* Scene text fade-in */
+.scene-fade-in {
+  animation: sceneFade 0.5s ease forwards;
+}
+
+@keyframes sceneFade {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ending title animation */
+.ending-title-hidden {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+.ending-title-show {
+  animation: titleReveal 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes titleReveal {
+  0% { opacity: 0; transform: scale(0.5); }
+  60% { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.ending-title-show::after {
+  content: '';
+  display: block;
+  height: 2px;
+  margin: 0.5rem auto;
+  background: linear-gradient(90deg, transparent, #f43f5e, transparent);
+  animation: lineGrow 0.8s ease 0.8s forwards;
+  width: 0;
+}
+
+@keyframes lineGrow {
+  to { width: 80%; }
+}
+
+/* Hearts rain animation (captcha success) */
+.hearts-rain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+  overflow: hidden;
+}
+
+.hearts-rain .heart {
+  position: absolute;
+  top: -10%;
+  font-size: 1.5rem;
+  animation: heartFall linear forwards;
+  opacity: 0.8;
+}
+
+@keyframes heartFall {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
+  100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+}
+
+/* Progress bar glow */
+#progress-bar {
+  box-shadow: 0 0 8px rgba(244, 63, 94, 0.3);
+}
+
+/* Date card element */
+.date-element {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, #fff1f2, #fef7f0);
+}
+
+.date-element .icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.date-element .label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #9ca3af;
+  font-weight: 600;
+}
+
+.date-element .value {
+  font-size: 0.9rem;
+  color: #374151;
+  font-weight: 500;
+}
